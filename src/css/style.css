@@ -1,0 +1,126 @@
+/* CSS HEX
+--desert-sand: #D6AA97ff;
+--bole: #6e4230ff;
+--bole-2: #653a2aff;
+--caput-mortuum: #5c3324ff;
+--caput-mortuum-2: #532c1eff;
+--caput-mortuum-3: #4a2419ff;
+--black-bean: #411d13ff;
+--black-bean-2: #38160dff;
+--black-bean-3: #2f0e07ff;
+--black-bean-4: #260701ff;
+*/
+/*
+https://coolors.co/d6aa97-6e4230-653a2a-5c3324-532c1e-4a2419-411d13-38160d-2f0e07-260701
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/*HEADER*/
+
+header#main-header{
+    background: linear-gradient(#6e4230ff, #653a2aff, #5c3324ff, #532c1eff, #4a2419ff, #411d13ff, #38160dff, #2f0e07ff, #260701ff);
+    color: #D6AA97ff;
+    text-align: center;
+}
+
+header#main-header img{
+    width: 30%;
+}
+
+nav#main-navbar{
+    background-color: #6e4230ff;
+    color: #D6AA97ff;
+    margin-top: 1.5%;
+}
+
+nav#main-navbar ul li{
+    float: left;
+    list-style: none;
+    font-size: 2rem;
+    width: calc(100% / 4);
+    padding: 0.5% 1.5%;
+    text-align: center;
+}
+
+nav#main-navbar ul li a{
+    text-decoration: none;
+    color: #D6AA97ff;
+    display: inline-block;
+    width: 100%;
+    padding: 7.5% 0;
+    font-weight: bold;
+}
+
+nav#main-navbar ul li a:hover{
+    border-radius: 999%;
+    background-color: #D6AA97ff;
+    color: #6e4230ff;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+div#clearfix{
+    clear: both;
+}
+
+/*SECTION*/
+
+section.main-section-navbar{
+    font-size: 1.3rem;
+    text-align: center;
+    background-color: #D6AA97ff;
+    color: #411d13ff;
+    margin: 1%;
+    border-radius: 35% 20%;
+    padding: 400px;
+}
+
+section.main-section-navbar h2{
+    padding: 2%;
+}
+
+section.main-section-navbar p#content-chi-sono{
+    padding-bottom: 2%;
+}
+
+/*BOTTOM TORNA SU*/
+
+#tornaSu {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            background-color: #260701ff;
+            color: #D6AA97ff;
+            border: none;
+            padding: 15px 20px;
+            font-size: 1.1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            /*display: none; /* Nascosto all'inizio */
+        }
+
+#tornaSu:hover {
+    background-color: #D6AA97ff;
+    color: #6e4230ff;
+}
+
+/*FOOTER*/
+
+footer#main-footer{
+    background-color: #4a2419ff;
+    color: #D6AA97ff;
+    padding: 2%;
+}
