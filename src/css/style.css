@@ -26,18 +26,77 @@ https://coolors.co/d6aa97-6e4230-653a2a-5c3324-532c1e-4a2419-411d13-38160d-2f0e0
     font-style: normal;
 }
 
-
+body{
+    min-height: 100vh;
+}
 
 /*HEADER*/
 
-header#main-header{
-    background: linear-gradient(#6e4230ff, #653a2aff, #5c3324ff, #532c1eff, #4a2419ff, #411d13ff, #38160dff, #2f0e07ff, #260701ff);
-    color: #D6AA97ff;
-    text-align: center;
+/*h1 contenitore di svg*/
+h1{
+    width: 100%;
+    min-width: 20%;
 }
 
-header#main-header img{
-    width: 30%;
+/*SVG responsive*/
+header h1 svg#svg-header-logo {
+    width: 100%;
+    height: auto;
+  }
+  /* Stile per DAIANA */
+  .name-daiana-logo {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    fill: white;
+  }
+  /* Stile per LASH ARTIST */
+  .lash-artist {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    fill: white;
+  }
+  /* Stile per la linea */
+  .line-logo {
+    stroke: white;
+    stroke-width: 6;
+    fill: none;
+  }
+  /* Animazione per disegnare la linea */
+  @keyframes drawLine {
+    0% {
+      stroke-dashoffset: 400;
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
+
+  .animate-line-logo {
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+    animation: drawLine 2s forwards;
+    animation-delay: 0.5s;
+  }
+  /* Animazione per far scendere il testo "LASH ARTIST" */
+  @keyframes dropText {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  header#main-header-logo g.animate-secondary-text {
+    opacity: 0;
+    animation: dropText 2s forwards 2s;
+  }
+
+header#main-header-logo{
+    background: linear-gradient(#6e4230ff, #653a2aff, #5c3324ff, #532c1eff, #4a2419ff, #411d13ff, #38160dff, #2f0e07ff, #260701ff);
+    text-align: center;
 }
 
 nav#main-navbar{

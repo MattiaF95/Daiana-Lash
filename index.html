@@ -18,8 +18,26 @@
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <header id="main-header">
-        <h1><img src="assets/img/logo-daiana-2-Photoroom.png" alt="Daiana Lash Artist - Extension Ciglia e Laminazione"></h1>
+    <header id="main-header-logo">
+        <h1>
+            <svg id="svg-header-logo" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+                <!-- Testo DAIANA centrato -->
+                <text x="400" y="150" text-anchor="middle" dominant-baseline="middle" class="name-daiana-logo">
+                  DAIANA
+                </text>
+                
+                <!-- Linea che attraversa DAIANA, allineata con i trattini delle A -->
+                <!-- In questo esempio la linea è posizionata a y=135 -->
+                <line x1="230" y1="155" x2="630" y2="155" class="line-logo animate-line-logo"/>
+                
+                <!-- Testo LASH ARTIST che scende dall'alto sulla destra -->
+                <!-- Usando dominant-baseline="hanging" in modo che y rappresenti il bordo superiore -->
+                <g class="animate-secondary-text">
+                  <text x="550" y="115" dominant-baseline="hanging" class="lash-artist">LASH</text>
+                  <text x="550" y="135" dominant-baseline="hanging" class="lash-artist">ARTIST</text>
+                </g>
+            </svg>
+        </h1>
     </header>
     <nav id="main-navbar">
         <ul>
