@@ -34,9 +34,8 @@ body{
 
 /*h1 contenitore di svg*/
 h1{
-    width: 100%;
-    min-width: 20%;
-}
+    width: 30%;
+  }
 
 /*SVG responsive*/
 header h1 svg#svg-header-logo {
@@ -47,14 +46,14 @@ header h1 svg#svg-header-logo {
   .name-daiana-logo {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 5rem;
     fill: white;
   }
   /* Stile per LASH ARTIST */
   .lash-artist {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     fill: white;
   }
   /* Stile per la linea */
@@ -144,7 +143,6 @@ section.main-section-navbar{
     color: #411d13ff;
     margin: 1%;
     border-radius: 35% 20%;
-    padding: 400px;
 }
 
 section.main-section-navbar h2{
