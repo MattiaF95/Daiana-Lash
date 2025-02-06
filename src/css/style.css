@@ -50,7 +50,7 @@ nav#main-navbar ul li{
     float: left;
     list-style: none;
     font-size: 2rem;
-    width: calc(100% / 4);
+    width: calc(100% / 5);
     padding: 0.5% 1.5%;
     text-align: center;
 }
